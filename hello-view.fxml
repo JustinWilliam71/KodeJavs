@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="248.0" prefWidth="264.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rplbo.kalkulatorbesar.Kalkulator">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <TextField fx:id="inputan" />
+   <Label fx:id="jawaban" text="Hasil" />
+   <HBox alignment="CENTER" prefHeight="0.0" prefWidth="200.0" spacing="10.0">
+      <children>
+         <Button mnemonicParsing="false" onAction="#angka1" text="1" />
+         <Button mnemonicParsing="false" onAction="#angka2" text="2" />
+         <Button mnemonicParsing="false" onAction="#angka3" text="3" />
+      </children>
+      <VBox.margin>
+         <Insets />
+      </VBox.margin>
+   </HBox>
+   <HBox alignment="CENTER" prefHeight="0.0" prefWidth="200.0" spacing="10.0">
+      <children>
+         <Button mnemonicParsing="false" onAction="#angka4" text="4" />
+         <Button mnemonicParsing="false" onAction="#angka5" text="5" />
+         <Button mnemonicParsing="false" onAction="#angka6" text="6" />
+      </children>
+   </HBox>
+   <HBox alignment="CENTER" layoutX="30.0" layoutY="76.0" prefHeight="0.0" prefWidth="200.0" spacing="10.0">
+      <children>
+         <Button mnemonicParsing="false" onAction="#angka7" text="7" />
+         <Button mnemonicParsing="false" onAction="#angka8" text="8" />
+         <Button mnemonicParsing="false" onAction="#angka9" text="9" />
+      </children>
+   </HBox>
+   <HBox alignment="CENTER" layoutX="30.0" layoutY="167.0" prefHeight="0.0" prefWidth="200.0" spacing="10.0">
+      <children>
+         <Button mnemonicParsing="false" onAction="#angka0" text="0" />
+      </children>
+   </HBox>
+   <HBox alignment="CENTER" layoutX="30.0" layoutY="167.0" prefHeight="0.0" prefWidth="200.0" spacing="10.0">
+      <children>
+         <Button mnemonicParsing="false" onAction="#tambah" text="+" />
+         <Button mnemonicParsing="false" onAction="#kurang" text="-" />
+         <Button mnemonicParsing="false" onAction="#kali" text="x" />
+         <Button mnemonicParsing="false" onAction="#bagi" text=":" />
+      </children>
+   </HBox>
+   <Button onAction="#hitung" mnemonicParsing="false" text="=" />
+</VBox>
